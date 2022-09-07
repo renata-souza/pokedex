@@ -1,5 +1,5 @@
 .container {
-  background: url('../public/images/home-background.jpg') no-repeat center/cover;
+  background: url('../public/images/background.jpg') no-repeat center/cover;
   height: 100vh;
 }
 
@@ -18,12 +18,13 @@
   backdrop-filter: blur(3px);
 }
 
-.content h1, .content p {
-  margin-bottom: 40px;
+.content h1 {
+  margin-top: 40px;
+  font-size: 1.5em;
 }
 
-.content h1 {
-  font-size: 1.5em;
+.content p {
+  margin-top: 20px;
 }
 
 .content p {
@@ -36,7 +37,8 @@
   border-radius: 50%;
 }
 
-.content button {
+.content a {
+  font-size: 14px;
   padding: 15px 20px;
   margin-top: 20px;
   background-color: #FEFEFE7B;
@@ -46,16 +48,6 @@
   transition: all 1s ease-in-out;
 }
 
-.content button:hover {
+.content a:hover {
   background-color: #FEFEFED5;
-}
-
-.content a {
-  margin-top: 40px;
-}
-
-.content a::before {
-  content: '🢥';
-  font-size: 2em;
-  margin-right: 10px;
 }
