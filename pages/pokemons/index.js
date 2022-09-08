@@ -1,6 +1,6 @@
+import Head from 'next/head'
 import Card from '../../components/Card'
-import Footer from '../../components/Footer'
-import Header from '../../components/Header'
+import Layout from '../../components/Layout'
 import styles from '../../styles/pokemons.module.css'
 
 export async function getStaticProps() {
@@ -20,15 +20,16 @@ const pokemons = ({pokemonsData}) => {
   const pokemons = pokemonsData
 
   return (
-    <div className={styles.container}>
-      <Header />
-      <div className={styles.content}>
-        <ul>
+    <>
+      <Head>
+        <title>Pokemons</title>
+      </Head>
+      <Layout>
+        <ul className={styles.pokeList}>
           {pokemons?.map(pokemon => <Card pokemon={pokemon} key={pokemon.id} />)}
         </ul>
-      </div>
-      <Footer />
-    </div>
+      </Layout>
+    </>
   )
 }
 

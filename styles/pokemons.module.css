@@ -1,19 +1,7 @@
-.container {
-  background: rgba(185,225,222,1);
-}
-
-.content {
-  width: 80%;
-  padding: 0;
-  margin: 50px auto;
-  backdrop-filter: blur(3px);
-}
-
-.content ul {
+.pokeList {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
 }
-

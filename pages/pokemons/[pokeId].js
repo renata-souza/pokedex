@@ -1,3 +1,5 @@
+import Layout from "../../components/Layout"
+
 export const getStaticPaths = async () => {
   const maxPokemons = 151
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${maxPokemons}`)
@@ -29,9 +31,9 @@ export const getStaticProps = async (context) => {
 const pokemons = ({ pokemon }) => {
 
   return (
-    <>
+    <Layout>
       <div>Pokemon: {pokemon.name}</div>
-    </>
+    </Layout>
   )
 }
 

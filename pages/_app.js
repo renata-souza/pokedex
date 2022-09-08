@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/images/favicon.ico" />
+        <meta name="description" content="Pokedex" />
       </Head>
       <Component {...pageProps} />
     </>
