@@ -15,7 +15,7 @@ const NotFound = () => {
         />
         <h1>404 - Page not found</h1>
         <p>Oh no! Seems like Snorlax ate the page you were looking for...</p>
-        <LinkTo href='/' btnText='GO BACK HOME' />
+        <LinkTo href='/'>GO BACK HOME</LinkTo>
       </div>
     </div>
   )

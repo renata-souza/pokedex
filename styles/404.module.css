@@ -45,7 +45,7 @@
   cursor: pointer;
   border: 2px solid black;
   border-radius: 10px;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .content a:hover {

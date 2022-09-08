@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.171);
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header li a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.header li a:hover {
+  color: purple;
+}

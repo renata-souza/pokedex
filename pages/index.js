@@ -19,7 +19,7 @@ export default function Home() {
           width={150}
           height={150} 
         />
-        <LinkTo href='/pokemons' btnText='POKEDEX' />
+        <LinkTo href='/pokemons'>POKEDEX</LinkTo>
       </main>
     </div>
   )

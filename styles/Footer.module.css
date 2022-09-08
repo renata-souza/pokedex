@@ -1,0 +1,9 @@
+.footer {
+  height: 70px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.171);
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
+}
