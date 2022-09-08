@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Layout from "../../components/Layout"
+import IndividualCard from "../../components/IndividualCard"
 
 export const getStaticPaths = async () => {
   const maxPokemons = 151
@@ -37,7 +38,7 @@ const pokemons = ({ pokemon }) => {
       <title>Pokemon - {pokemon.name}</title>
     </Head>
       <Layout>
-        <div>Pokemon: {pokemon.name}</div>
+        <IndividualCard pokemon={pokemon} key={pokemon.id} />
       </Layout>
     </>
   )

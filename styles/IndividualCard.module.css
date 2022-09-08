@@ -1,6 +1,5 @@
 .card {
-  width: 250px;
-  height: 300px;
+  width: 50%;
   font-size: 14px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.171);
@@ -9,6 +8,7 @@
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
   border-radius: 8px;
   list-style: none;
+  margin: 0 auto;
 }
 
 .card p {
@@ -26,17 +26,25 @@
   text-transform: capitalize;
 }
 
-.card a {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.card h3 {
   font-size: 14px;
-  font-weight: 600;
+  margin-bottom: 25px;
 }
 
-.card a::before {
-  content: '⮞';
+.card span {
+  padding: 8px 15px;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
-.card a:hover {
-  color: purple;
+.type_grass {
+  background-color: rgb(60, 183, 60);
+}
+
+.type_poison {
+  background-color: rgb(172, 76, 172);
+}
+
+.type_grass {
+  background-color: rgb(60, 183, 60);
 }
