@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import LinkTo from '../components/LinkTo'
 import styles from '../styles/404.module.css'
@@ -5,6 +6,9 @@ import styles from '../styles/404.module.css'
 const NotFound = () => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>404 - Page not found</title>
+      </Head>
       <div className={styles.content}>
         <Image
           className={styles.pikachu}

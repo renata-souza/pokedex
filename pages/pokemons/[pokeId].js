@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Layout from "../../components/Layout"
 
 export const getStaticPaths = async () => {
@@ -31,9 +32,14 @@ export const getStaticProps = async (context) => {
 const pokemons = ({ pokemon }) => {
 
   return (
-    <Layout>
-      <div>Pokemon: {pokemon.name}</div>
-    </Layout>
+    <>
+    <Head>
+      <title>Pokemon - {pokemon.name}</title>
+    </Head>
+      <Layout>
+        <div>Pokemon: {pokemon.name}</div>
+      </Layout>
+    </>
   )
 }
 
