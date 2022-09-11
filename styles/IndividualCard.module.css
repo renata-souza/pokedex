@@ -3,12 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   min-width: 250px;
+  max-width: 550px;
   font-size: 14px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.171);
-  padding: 15px;
+  padding: 20px;
   backdrop-filter: blur(6px);
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
   border-radius: 8px;
