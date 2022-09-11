@@ -17,7 +17,7 @@ const Card = ({ pokemon }) => {
         <Image loader={myLoader} src={url} width={100} height={100} alt={pokemon.name} unoptimized={true} />
         <p># {pokemon.id}</p>
         <h2>{pokemon.name}</h2>
-        <LinkTo href={`/pokemons/${pokemon.id}`}>Detalhes</LinkTo>
+        <LinkTo href={`/pokemons/${pokemon.id}`}>Details</LinkTo>
       </li>
     </LinkTo>
   )
