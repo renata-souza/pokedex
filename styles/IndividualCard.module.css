@@ -1,10 +1,14 @@
 .card {
-  width: 50%;
-  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-width: 250px;
   font-size: 14px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.171);
-  padding: 30px;
+  padding: 15px;
   backdrop-filter: blur(6px);
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
   border-radius: 8px;
@@ -22,19 +26,13 @@
 }
 
 .card h2 {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 25px;
   text-transform: capitalize;
 }
 
-h3.types {
-  display: flex;
-  margin: auto;
-  width: fit-content;
-}
-
 .card h3 {
-  font-size: 14px;
+  font-size: .9em;
   margin-bottom: 25px;
 }
 
@@ -44,11 +42,22 @@ h3.types {
   border-radius: 5px;
 }
 
+.types {
+  width: fit-content;
+  display: flex;
+}
 
 .types span {
   color: white;
   font-weight: normal;
   border: 2px solid black;
+}
+
+@media (max-width: 500px) {
+  .types {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 .type_grass {

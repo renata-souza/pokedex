@@ -17,7 +17,7 @@ const IndividualCard = ({ pokemon }) => {
       <h2>Name: {pokemon.name}</h2>
       <h3>Weight: {pokemon.weight / 10}kg</h3>
       <h3>Height: {pokemon.height * 10}cm</h3>
-      <h3 className={styles.types}>Type: {pokemon.types.map((item, index) => (
+      <h3 className={styles.types}>Types: {pokemon.types.map((item, index) => (
         <div key={index} >
           <span className={styles['type_' + item.type.name]}>{item.type.name}</span>
         </div>
