@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Layout from "../../components/Layout"
 import IndividualCard from "../../components/IndividualCard"
+import LinkTo from "../../components/LinkTo"
 
 export const getStaticPaths = async () => {
   const maxPokemons = 151
@@ -32,13 +33,18 @@ export const getStaticProps = async (context) => {
 
 const pokemons = ({ pokemon }) => {
 
+  const title = `Pokemon - ${pokemon.name}`
+
   return (
     <>
-    <Head>
-      <title>Pokemon - {pokemon.name}</title>
-    </Head>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <Layout>
         <IndividualCard pokemon={pokemon} key={pokemon.id} />
+        <div className='back_to_pokedex'>
+          <LinkTo href='/pokemons'>BACK TO POKEDEX</LinkTo>
+        </div>
       </Layout>
     </>
   )

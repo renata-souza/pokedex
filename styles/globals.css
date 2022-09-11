@@ -43,5 +43,25 @@ a {
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
 }
 
+.back_to_pokedex {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.back_to_pokedex a {
+  font-size: 14px;
+  padding: 15px 20px;
+  background-color: #FEFEFE7B;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.back_to_pokedex a:hover {
+  background-color: #FEFEFED5;
+}
+
 
 
