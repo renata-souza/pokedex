@@ -36,15 +36,6 @@
   font-weight: 600;
 }
 
-.card a::before {
-  content: '⮞';
-  margin-right: 10px;
-}
-
 .card a:hover {
   color: purple;
-}
-
-.type_grass {
-  background-color: #64BC3F;
 }
