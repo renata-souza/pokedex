@@ -9,6 +9,7 @@
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.171);
   border-radius: 8px;
   list-style: none;
+  cursor: pointer;
 }
 
 .card p {
@@ -39,4 +40,8 @@
 
 .card a:hover {
   color: purple;
+}
+
+.type_grass {
+  background-color: #64BC3F;
 }

@@ -12,12 +12,14 @@ const Card = ({ pokemon }) => {
   const url = `https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`
 
   return (
-    <li className={styles.card}>
-      <Image loader={myLoader} src={url} width={100} height={100} alt={pokemon.name} unoptimized={true} />
-      <p># {pokemon.id}</p>
-      <h2>{pokemon.name}</h2>
-      <LinkTo href={`/pokemons/${pokemon.id}`}>Detalhes</LinkTo>
-    </li>
+    <LinkTo href={`/pokemons/${pokemon.id}`}>
+      <li className={styles.card}>
+        <Image loader={myLoader} src={url} width={100} height={100} alt={pokemon.name} unoptimized={true} />
+        <p># {pokemon.id}</p>
+        <h2>{pokemon.name}</h2>
+        <LinkTo href={`/pokemons/${pokemon.id}`}>Detalhes</LinkTo>
+      </li>
+    </LinkTo>
   )
 }
 

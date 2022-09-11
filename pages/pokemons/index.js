@@ -25,6 +25,9 @@ const pokemons = ({pokemonsData}) => {
         <title>Pokemons</title>
       </Head>
       <Layout>
+        <div className='title'>
+          <h1>Gotta catch'em all!</h1>
+        </div>
         <ul className={styles.pokeList}>
           {pokemons?.map(pokemon => <Card pokemon={pokemon} key={pokemon.id} />)}
         </ul>

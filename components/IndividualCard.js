@@ -12,13 +12,15 @@ const IndividualCard = ({ pokemon }) => {
 
   return (
     <div className={styles.card}>
-      <Image loader={myLoader} src={url} width={100} height={100} alt={pokemon.name} unoptimized={true} />
+      <Image loader={myLoader} src={url} width={200} height={200} alt={pokemon.name} unoptimized={true} />
       <p># {pokemon.id}</p>
       <h2>Name: {pokemon.name}</h2>
       <h3>Weight: {pokemon.weight / 10}kg</h3>
       <h3>Height: {pokemon.height * 10}cm</h3>
-      <h3>Type: {pokemon.types.map((item, index) => (
-        <span key={index} className={styles['type_' + item.type.name]}>{item.type.name}</span>
+      <h3 className={styles.types}>Type: {pokemon.types.map((item, index) => (
+        <div key={index} >
+          <span className={styles['type_' + item.type.name]}>{item.type.name}</span>
+        </div>
       ))}</h3>
     </div>
   )
